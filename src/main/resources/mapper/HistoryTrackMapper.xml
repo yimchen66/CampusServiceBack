@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.HistoryTrackMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.model.domain.HistoryTrack">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="openId" column="open_id" jdbcType="VARCHAR"/>
+            <result property="orderId" column="order_id" jdbcType="VARCHAR"/>
+            <result property="orderTitle" column="order_title" jdbcType="VARCHAR"/>
+            <result property="orderPicture" column="order_picture" jdbcType="VARCHAR"/>
+            <result property="orderMoney" column="order_money" jdbcType="DOUBLE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,open_id,order_id,
+        order_title,order_picture,order_money
+    </sql>
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.model.domain.User">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="nickName" column="nick_name" jdbcType="VARCHAR"/>
+            <result property="figureUrl" column="figure_url" jdbcType="VARCHAR"/>
+            <result property="money" column="money" jdbcType="DOUBLE"/>
+            <result property="sumOrder" column="sum_order" jdbcType="INTEGER"/>
+            <result property="credit" column="credit" jdbcType="DOUBLE"/>
+            <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="VARCHAR"/>
+            <result property="lastLogin" column="last_login" jdbcType="TIMESTAMP"/>
+            <result property="location" column="location" jdbcType="VARCHAR"/>
+            <result property="label" column="label" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,nick_name,figure_url,
+        money,sum_order,credit,
+        user_name,password,sex,
+        last_login,location,label
+    </sql>
+</mapper>

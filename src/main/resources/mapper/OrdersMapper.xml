@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.OrdersMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.model.domain.Orders">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="hostId" column="host_id" jdbcType="VARCHAR"/>
+            <result property="orderTitle" column="order_title" jdbcType="VARCHAR"/>
+            <result property="orderContent" column="order_content" jdbcType="VARCHAR"/>
+            <result property="orderPictures" column="order_pictures" jdbcType="VARCHAR"/>
+            <result property="orderAddress" column="order_address" jdbcType="VARCHAR"/>
+            <result property="orderMoney" column="order_money" jdbcType="DOUBLE"/>
+            <result property="orderDeadline" column="order_deadline" jdbcType="TIMESTAMP"/>
+            <result property="orderIsDelete" column="order_is_delete" jdbcType="INTEGER"/>
+            <result property="orderCreateTime" column="order_create_time" jdbcType="TIMESTAMP"/>
+            <result property="orderState" column="order_state" jdbcType="INTEGER"/>
+            <result property="orderLabel" column="order_label" jdbcType="VARCHAR"/>
+            <result property="acceptId" column="accept_id" jdbcType="VARCHAR"/>
+            <result property="orderHot" column="order_hot" jdbcType="BIGINT"/>
+            <result property="orderIsRecommend" column="order_is_recommend" jdbcType="INTEGER"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,host_id,order_title,
+        order_content,order_pictures,order_address,
+        order_money,order_deadline,order_is_delete,
+        order_create_time,order_state,order_label,
+        accept_id,order_hot,order_is_recommend,
+        version
+    </sql>
+</mapper>
