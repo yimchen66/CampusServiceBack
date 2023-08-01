@@ -1,5 +1,5 @@
 # CampusServiceBack校园服务后端
-● pring Boot：基于Spring框架的开发工具，简化了Spring应用程序的配置和部署。
+● spring Boot：基于Spring框架的开发工具，简化了Spring应用程序的配置和部署。
 
 ● MyBatis Plus：ORM框架，简化了数据库操作和映射。
 
