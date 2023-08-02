@@ -16,3 +16,5 @@
 ● 图片上传：实现用户上传图片的功能。
 
 ● 统一消息返回体：定义统一的消息返回体格式，统一封装返回数据的结构，方便前端进行统一处理和解析。
+
+![image](https://github.com/yimchen66/CampusServiceBack/assets/114284239/0c1b29fd-5927-4e4f-941d-31ffedc3c2c9)
